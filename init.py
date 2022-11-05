@@ -7,7 +7,7 @@ app = connexion.FlaskApp(__name__)
 
 application = app.app
 
-application.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///database.db"
+application.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///database.sqlite"
 application.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(application)
